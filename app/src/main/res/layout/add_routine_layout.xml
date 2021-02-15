@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cross_btn" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/title_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -52,7 +52,7 @@
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/title_et" />
 
     <TextView
         android:id="@+id/textView3"
@@ -68,72 +68,101 @@
 
     <LinearLayout
         android:id="@+id/select_time"
-        android:background="@drawable/add_routine_select_time_layout_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/add_routine_select_time_layout_background"
         android:orientation="horizontal"
-        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3">
 
         <RelativeLayout
             android:id="@+id/three_sec_time"
-            android:paddingHorizontal="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_routine_select_time_item_background"
+            android:paddingHorizontal="10dp">
 
             <TextView
+                android:id="@+id/three_sec_time_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:paddingVertical="5dp"
-                android:paddingHorizontal="10dp"
                 android:fontFamily="@font/montserrat"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
                 android:text="03s"
-                android:textColor="#222" />
+                android:textColor="#fff"
+                android:textSize="7dp" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/five_sec_time"
-            android:paddingHorizontal="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
 
             <TextView
+                android:id="@+id/five_sec_time_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:paddingVertical="5dp"
-                android:paddingHorizontal="10dp"
                 android:fontFamily="@font/montserrat"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
                 android:text="05s"
-                android:textColor="#222" />
+                android:textColor="#222"
+                android:textSize="7dp" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/ten_sec_time"
-            android:paddingHorizontal="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:paddingVertical="5dp"
-                    android:paddingHorizontal="10dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="10s"
-                    android:textColor="#222" />
+            <TextView
+                android:id="@+id/ten_sec_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
+                android:text="10s"
+                android:textColor="#222"
+                android:textSize="7dp" />
 
-            </RelativeLayout>
+        </RelativeLayout>
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="@drawable/add_routine_add_interval_btn_backgrount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

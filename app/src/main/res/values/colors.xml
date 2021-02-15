@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="transparent">#00000000</color>
+    <color name="app_color_main">#0779E4</color>
 </resources>

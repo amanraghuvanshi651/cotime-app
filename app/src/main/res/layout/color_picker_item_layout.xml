@@ -22,7 +22,18 @@
             android:id="@+id/color_container"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:background="#FFE227"/>
+            android:background="#FFE227">
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/check"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
